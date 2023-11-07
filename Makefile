@@ -6,7 +6,7 @@
 #    By: astoll <astoll@student.42lausanne.ch>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/25 14:29:24 by astoll            #+#    #+#              #
-#    Updated: 2023/11/07 15:12:20 by astoll           ###   ########.fr        #
+#    Updated: 2023/11/07 20:31:38 by astoll           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,6 +28,7 @@ SRCS =	ft_atoi.c		\
 		ft_putendl_fd.c	\
 		ft_putnbr_fd.c	\
 		ft_putstr_fd.c	\
+		ft_split.c		\
 		ft_strchr.c		\
 		ft_strdup.c		\
 		ft_striteri.c	\
