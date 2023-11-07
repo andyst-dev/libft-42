@@ -6,7 +6,7 @@
 /*   By: astoll <astoll@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 12:54:11 by astoll            #+#    #+#             */
-/*   Updated: 2023/11/03 13:08:32 by astoll           ###   ########.fr       */
+/*   Updated: 2023/11/07 15:09:50 by astoll           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_lstsize(t_list *lst)
 	size_t	i;
 
 	i = 0;
-	while (lst != '\0')
+	while (lst != NULL)
 	{
 		lst = lst->next;
 		i++;

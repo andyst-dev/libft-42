@@ -6,7 +6,7 @@
 #    By: astoll <astoll@student.42lausanne.ch>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/25 14:29:24 by astoll            #+#    #+#              #
-#    Updated: 2023/11/07 13:25:30 by astoll           ###   ########.fr        #
+#    Updated: 2023/11/07 15:12:20 by astoll           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,6 +50,7 @@ SRCSB =	ft_lstadd_back.c	\
 		ft_lstdelone.c		\
 		ft_lstiter.c		\
 		ft_lstlast.c		\
+		ft_lstmap.c			\
 		ft_lstnew.c			\
 		ft_lstsize.c		\
 
@@ -58,7 +59,7 @@ OBJS = ${SRCS:.c=.o}
 OBJSB = ${SRCSB:.c=.o}
 LIBC = ar rcs
 FLAGS = -Wall -Wextra -Wextra
-CC = gcc
+CC = cc
 RM = rm -f
 
 .c.o:
