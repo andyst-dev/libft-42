@@ -6,7 +6,7 @@
 /*   By: astoll <astoll@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 20:04:31 by astoll            #+#    #+#             */
-/*   Updated: 2023/11/07 21:56:18 by astoll           ###   ########.fr       */
+/*   Updated: 2023/11/07 22:11:22 by astoll           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,18 +92,16 @@ static char	**split(char const *s, char c, char **array, size_t count)
 char	**ft_split(char const *s, char c)
 {
 	char	**array;
-	size_t	count;
 
 	if (!s)
 	{
 		return (NULL);
 	}
-	count = ft_count(s, c);
-	array = (char **)malloc(sizeof(char *) * (count + 1));
+	array = (char **)malloc(sizeof(char *) * (ft_count(s, c) + 1));
 	if (!array)
 	{
 		return (NULL);
 	}
-	array = split(s, c, array, count);
+	array = split(s, c, array, ft_count(s, c));
 	return (array);
 }
