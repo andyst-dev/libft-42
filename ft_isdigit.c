@@ -6,7 +6,7 @@
 /*   By: astoll <astoll@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 13:20:22 by astoll            #+#    #+#             */
-/*   Updated: 2023/10/24 11:34:12 by astoll           ###   ########.fr       */
+/*   Updated: 2023/11/07 13:20:54 by astoll           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,3 @@ int	ft_isdigit(int c)
 	}
 	return (0);
 }
-
-/*#include <stdio.h>
-
-int	main()
-{
-	printf("%d", ft_isdigit('f'));
-}*/

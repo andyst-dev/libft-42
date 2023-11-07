@@ -6,7 +6,7 @@
 /*   By: astoll <astoll@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 13:47:28 by astoll            #+#    #+#             */
-/*   Updated: 2023/10/24 11:33:59 by astoll           ###   ########.fr       */
+/*   Updated: 2023/11/07 13:20:35 by astoll           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,3 @@ int	ft_isalnum(int c)
 	}
 	return (0);
 }
-
-/*#include <stdio.h>
-
-int	main()
-{
-	printf("%d", ft_isalnum('g'));
-}*/

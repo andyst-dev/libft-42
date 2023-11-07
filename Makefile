@@ -6,11 +6,9 @@
 #    By: astoll <astoll@student.42lausanne.ch>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/25 14:29:24 by astoll            #+#    #+#              #
-#    Updated: 2023/11/07 13:03:37 by astoll           ###   ########.fr        #
+#    Updated: 2023/11/07 13:25:30 by astoll           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
-NAME = libft.a
 
 SRCS =	ft_atoi.c		\
 		ft_bzero.c		\
@@ -30,7 +28,6 @@ SRCS =	ft_atoi.c		\
 		ft_putendl_fd.c	\
 		ft_putnbr_fd.c	\
 		ft_putstr_fd.c	\
-		ft_split.c		\
 		ft_strchr.c		\
 		ft_strdup.c		\
 		ft_striteri.c	\
@@ -53,20 +50,15 @@ SRCSB =	ft_lstadd_back.c	\
 		ft_lstdelone.c		\
 		ft_lstiter.c		\
 		ft_lstlast.c		\
-		ft_lstmap.c			\
 		ft_lstnew.c			\
 		ft_lstsize.c		\
 
+NAME = libft.a
 OBJS = ${SRCS:.c=.o}
-
 OBJSB = ${SRCSB:.c=.o}
-
 LIBC = ar rcs
-
 FLAGS = -Wall -Wextra -Wextra
-
-CC = cc
-
+CC = gcc
 RM = rm -f
 
 .c.o:
