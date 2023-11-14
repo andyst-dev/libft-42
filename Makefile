@@ -6,7 +6,7 @@
 #    By: astoll <astoll@student.42lausanne.ch>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/25 14:29:24 by astoll            #+#    #+#              #
-#    Updated: 2023/11/07 20:31:38 by astoll           ###   ########.fr        #
+#    Updated: 2023/11/14 13:43:02 by astoll           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -59,7 +59,7 @@ NAME = libft.a
 OBJS = ${SRCS:.c=.o}
 OBJSB = ${SRCSB:.c=.o}
 LIBC = ar rcs
-FLAGS = -Wall -Wextra -Wextra
+FLAGS = -Wall -Wextra -Werror
 CC = cc
 RM = rm -f
 
@@ -71,7 +71,7 @@ ${NAME}: ${OBJS}
 
 all: ${NAME}
 
-bonus : ${NAME} ${OBJSB}
+bonus: ${NAME} ${OBJSB}
 		${LIBC} ${NAME} ${OBJSB}
 
 clean:
