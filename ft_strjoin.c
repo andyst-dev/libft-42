@@ -6,7 +6,7 @@
 /*   By: astoll <astoll@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 12:43:35 by astoll            #+#    #+#             */
-/*   Updated: 2023/10/31 13:02:26 by astoll           ###   ########.fr       */
+/*   Updated: 2023/11/18 11:17:24 by astoll           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,31 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcat(dst, s2, (s1len + s2len + 1));
 	return (dst);
 }
+
+//better strjoin (pasquale)
+/*char	*ft_strjoin(char const *s1, char const *s2)
+{
+	int		i;
+	int		j;
+	char	*dst;
+
+	i = 0;
+	j = 0;
+	dst = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
+	if (!dst)
+	{
+		return (0);
+	}
+	while (s1[i] != '\0')
+	{
+		dst[i] = s1[i];
+		i++;
+	}
+	while (s2[j] != '\0')
+	{
+		dst[i + j] = s2[j];
+		j++;
+	}
+	dst[i + j] = '\0';
+	return (dst);
+}*/
