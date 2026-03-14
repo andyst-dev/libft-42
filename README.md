@@ -1,9 +1,9 @@
 # libft
 
 A custom C library developed as part of the 42 curriculum.
-This project consists of rebuilding a selected part of the standard C library, adding a few utility functions, and packaging everything into a reusable static library.
+`libft` is a small static library that reimplements part of the standard C library and adds a few utility functions that became useful again in later projects.
 
-`libft` was designed to become a base toolkit for later 42 projects, with a focus on low-level programming, pointer manipulation, memory handling, and clean function design.
+It was a good way to build solid foundations in low-level C, especially around memory handling, string manipulation, pointers and writing reusable code.
 
 ## Features
 - Reimplementation of common libc-style functions
@@ -17,6 +17,7 @@ This project consists of rebuilding a selected part of the standard C library, a
 - `Makefile` — builds the `libft.a` static library
 
 ## Mandatory part
+The mandatory part covers the core utility functions used throughout the project.
 
 ### Character checks and conversions
 - `ft_isalpha` — checks whether a character is alphabetic
@@ -63,7 +64,7 @@ This project consists of rebuilding a selected part of the standard C library, a
 - `ft_striteri` — applies a function to each character of a string in place
 
 ## Bonus part
-The bonus section adds a small linked list API based on the following structure:
+The bonus part adds linked list functions based on the following structure:
 
 ```c
 typedef struct s_list
@@ -110,17 +111,8 @@ Rebuild everything:
 make re
 ```
 
-## Output
-The project builds a static library:
-
-```bash
-libft.a
-```
-
-This library can then be linked into other C projects.
-
 ## Learning outcomes
-This project was an introduction to writing reusable low-level C code.
+This project was my first real base in reusable C code.
 It helped build solid foundations in:
 - pointer manipulation
 - memory allocation and deallocation
